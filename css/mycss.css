@@ -1,0 +1,102 @@
+body{
+    padding-top:51px;
+    padding-bottom:40px;
+    overflow-x: hidden;
+}
+.showMe{
+    display: block;
+}
+.sideBar{
+    z-index:1000;
+    background-color: rgb(205,235,211);
+    height:800px;
+    /*    border-radius: 5px;*/
+    overflow-x:hidden;
+    /*margin-left: 16px; 如果不加这句话，那么左边框就会不见 或者在在sideTabBar加padding 将内容撑开 */
+}
+.sideTabBar{
+    padding: 20px 0 20px 0px;
+    list-style-type: none;
+
+}
+.sideTabBar > li{
+    height: 50px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    list-style-type: none;
+}
+.sideTabBar > li:hover{
+    background: cornflowerblue;
+}
+.sideTabBar > li >a{
+    display: block;
+    height: 50px;
+    text-decoration: none;
+    line-height: 50px;
+    /*padding-left: 30px;*/
+    font-size: 20px;
+    color: black;
+}
+.sideTabBar > li >a:hover{
+    color:azure;
+}
+.main{
+    /*消除表单因为div固定高度导致第二个表单在小窗口中不能显示的问题*/
+    /*height:800px;*/
+    padding:18px;
+    /*background-color: lightgray;*/
+    /*background-color: rgb(252,206,142);*/
+    overflow: hidden;
+}
+.addinfo{
+    margin: 0 auto;
+    background-color: red;
+    text-align: center;
+}
+.halfPart{
+    margin-top: 10px;
+    width: 100%;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.addInfoPart{
+    float: left;
+}
+.formtable{
+    overflow: auto;
+}
+.half{
+    width: 50%;
+}
+.formTitle{
+    margin-left: 10px;
+    float: left;
+}
+.buttonArea{
+    float: right;
+    margin-right: 20px;
+}
+td input {
+    border: none;
+}
+.infoForm{
+    overflow: auto;
+    height: 700px;
+}
+.downMenu{
+    margin-left: -40px;
+    display: none;
+    position: relative;
+}
+.sideTabBar li:hover ul{
+    display: block;
+}
+ul{
+    list-style: none;
+}
+
+/*电池出厂页*/
+.childNav {height: 30px;line-height: 30px;margin:0px;}
+.childNav li {font-size: 15px;float: left;margin-right: 10px;}
+.childNav li a{color: #909090;}
